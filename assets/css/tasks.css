@@ -1,0 +1,187 @@
+/* ----------------Tabs Content Container---------------- */
+.content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: flex-start;
+	margin-top: 1%;
+	overflow-y: scroll;
+	height: 310px;
+	animation: fade 0.6s linear;
+}
+.scroll {
+	overflow: hidden;
+}
+.content::-webkit-scrollbar {
+	display: none;
+	overflow: hidden;
+}
+/* ----------------Animation---------------- */
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/* ----------------Task Template---------------- */
+.task {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.1s linear;
+	flex-wrap: wrap;
+}
+.task:hover {
+	background: rgba(0, 0, 0, 0.03);
+}
+.task .priority {
+	text-transform: capitalize;
+}
+.task .category {
+	text-transform: capitalize;
+}
+/* BG Color Classes */
+.high {
+	background-color: red;
+}
+.medium {
+	background-color: rgb(129, 129, 235);
+}
+.low {
+	background-color: rgb(160, 224, 160);
+}
+.personal {
+	background-color: rgb(241, 101, 101);
+}
+.work {
+	background-color: rgb(240, 237, 102);
+}
+.chores {
+	background-color: rgb(129, 129, 235);
+}
+.study {
+	background-color: rgb(240, 102, 182);
+}
+.others {
+	background-color: rgb(160, 224, 160);
+}
+/* ----------------Task Template---------------- */
+.task .text .date,
+.task .priority,
+.task .category,
+.task .checkbox,
+.task .edit,
+.task .delete {
+	width: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.1s linear;
+	cursor: pointer;
+	font-size: 1.1rem;
+	color: rgba(0, 0, 0, 0.7);
+	padding: 5px;
+	overflow: hidden;
+	word-break: break-all;
+	font-weight: 900;
+	font-family: "Ubuntu", sans-serif;
+	word-spacing: 0.2rem;
+	letter-spacing: 0.001rem;
+	line-height: 1.3rem;
+}
+.task .date,
+.task .priority,
+.task .category {
+	cursor: initial;
+	font-size: 0.9rem;
+	width: 11%;
+}
+.task .date {
+	width: 16%;
+}
+.task a,
+.task #edit {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.7);
+}
+.task a #check:hover,
+.task #edit:hover {
+	color: #afffd3;
+}
+.task a #delete:hover {
+	color: red;
+}
+.task .text {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	overflow: hidden;
+	word-break: break-all;
+	font-size: 0.95rem;
+	font-weight: 900;
+	font-family: "Ubuntu", sans-serif;
+	word-spacing: 0.2rem;
+	letter-spacing: 0.001rem;
+	line-height: 1.3rem;
+	padding: 10px;
+	color: rgba(0, 0, 0, 0.75);
+	cursor: initial;
+}
+.task .text .date {
+	font-size: 0.7rem;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+	color: rgb(97, 93, 93);
+	cursor: initial;
+}
+/* ----------------Line Through Class---------------- */
+.line-through {
+	text-decoration: line-through;
+	text-decoration-color: var(--text-color);
+	text-decoration-thickness: 2px;
+	-moz-text-decoration-color: var(--text-color);
+	-moz-text-decoration-thickness: 2px;
+}
+/* ----------------Delete Animation---------------- */
+.delete-animation {
+	transform: translateY(8rem) rotateZ(20deg);
+	opacity: 0;
+	transition: all 1s linear;
+}
+/* --------------------------------656px-------------------------------- */
+@media only screen and (max-width: 656px) {
+	.task .priority,
+	.task .category {
+		font-size: 0.9rem;
+		width: 20%;
+	}
+}
+/* --------------------------------424px-------------------------------- */
+@media only screen and (max-width: 424px) {
+	.task .text .date {
+		font-size: 0.6rem;
+	}
+	.task .text > p:nth-child(1) {
+		font-size: 0.7rem;
+	}
+}
+/* --------------------------------370px-------------------------------- */
+@media only screen and (max-width: 370px) {
+	.task .priority,
+	.task .category {
+		font-size: 0.6rem;
+	}
+	.task .checkbox,
+	.task .edit,
+	.task .delete {
+		font-size: 0.8rem;
+	}
+}
