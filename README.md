@@ -75,15 +75,6 @@ For any issues related to the project, raise an ISSUE in the respective Reposito
    <br/>
    <br/>
 
-## 🔗 Links
-
-> ## Checkout the Website [Web Application](https://fullstack-todo-list-application.onrender.com)
->
-> ## Checkout the Application Demo Video [YouTube](https://youtu.be/2VyxSQAE5mo)
-
-<br/>
-
-## 💻 Screens
 
 <p align="justify">
 <img src="https://user-images.githubusercontent.com/76626529/185441736-3de3ccec-045d-42b2-9533-b786fdf12e02.png">
@@ -92,12 +83,11 @@ For any issues related to the project, raise an ISSUE in the respective Reposito
 
 ## 🐦 Follow Me:
 
-> [Dev Community](https://dev.to/ayushkanduri)
+> [Dev Community](https://dev.to/staicy254)
 
 > [Twitter](https://twitter.com/ayush_codes)
 
-> [LinkedIn](https://www.linkedin.com/in/ayushkanduri/)
+> [LinkedIn](https://www.linkedin.com/in/auma-otambo-6342952a7/)
 
-> [YouTube](https://www.youtube.com/channel/UC6c1ajC_2jF7wQp7Y13t2bg)
 
-I hope you like the project. Thanks for reading :)
+
